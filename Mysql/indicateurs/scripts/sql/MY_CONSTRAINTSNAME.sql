@@ -1,0 +1,2 @@
+select sysdate() d,TABLE_SCHEMA,TABLE_NAME,CONSTRAINT_NAME,CONSTRAINT_TYPE
+from information_schema.table_constraints
