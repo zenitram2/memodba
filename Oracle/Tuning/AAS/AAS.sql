@@ -197,9 +197,3 @@ IS
     END IF;
 END;
 /
-
-
---BEGIN perfstat.stats_pkg.Rubrique_proc ( '20140120 13:06', '20140120 17:54', 'TQ', 'YYYYMMDD HH24:MI', 'Y' , INSTANCE=>1 ); END;
-
-
-	--select value     from v$parameter where name ='cpu_count';
