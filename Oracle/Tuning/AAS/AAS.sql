@@ -127,8 +127,7 @@ IS
             SQL_Dyn := ' select sum( TIME_WAITED)/1000 ' ;
             SQL_Dyn := SQL_Dyn || ' from stats$system_event ';
             SQL_Dyn := SQL_Dyn || ' where  snap_id = ' || wSNAP_ID;
-            SQL_Dyn := SQL_Dyn || ' AND INSTANCE_NUMBER = ' || INST_NUMBER ;
-            --SQL_Dyn := SQL_Dyn || ' AND PERFSTAT.OAR_PKG.Info_Carto( event , ''RUBRIQUE'' )  != ''HORS PERIMETRE'' ';
+            SQL_Dyn := SQL_Dyn || ' AND INSTANCE_NUMBER = ' || INST_NUMBER ;         
             SQL_Dyn := SQL_Dyn || ' AND '' || wCHAMP ||''  != ''HORS PERIMETRE'' ';
         ELSE
             SQL_Dyn := ' select sum( TIME_WAITED_MICRO)/1000000 ' ;
