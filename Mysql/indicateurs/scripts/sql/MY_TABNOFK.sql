@@ -5,7 +5,7 @@ select  1
 from INFORMATION_SCHEMA.KEY_COLUMN_USAGE  k
 where
 t.TABLE_SCHEMA=k.TABLE_SCHEMA and
-t.TABLE_NAME=k.TABLE_NAME
+t.TABLE_NAME=k.TABLE_NAME AND CONSTRAINT_NAME <> 'PRIMARY'
 )
 and t.table_schema <> 'information_schema'
 and table_type='BASE TABLE'
