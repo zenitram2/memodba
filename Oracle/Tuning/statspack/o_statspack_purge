@@ -1,0 +1,4 @@
+#!/bin/bash
+su -c /app/script/statspack/statspack_purge.ksh - oracle
+exit 0
+
